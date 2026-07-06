@@ -4,7 +4,7 @@
 
 This project demonstrates the design and implementation of a Small Office/Home Office (SOHO) network using Cisco Packet Tracer.
 
-The objective was to design a secure and scalable branch office network for XYZ Company that provides network segmentation, wireless connectivity, automatic IP address allocation, and communication between all departments.
+The objective was to design a secure and scalable branch office network for ABC Company that provides network segmentation, wireless connectivity, automatic IP address allocation, and communication between all departments.
 
 The project was completed from initial network planning through implementation, testing, and verification using Cisco IOS.
 
@@ -12,7 +12,7 @@ The project was completed from initial network planning through implementation, 
 
 # Network Topology
 
-![Network Topology](images/network-topology.png)
+![Network Topology](network-topology.png)
 
 ---
 
