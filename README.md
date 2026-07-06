@@ -205,6 +205,14 @@ The following tests were successfully completed:
 
 ---
 
+# Ping Results
+
+![Network Topology](Ping-result1.png)
+
+![Network Topology](Ping-result2.png)
+
+---
+
 # Skills Demonstrated
 
 This project demonstrates practical knowledge of:
