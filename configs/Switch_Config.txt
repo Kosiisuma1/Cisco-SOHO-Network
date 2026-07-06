@@ -1,1 +1,72 @@
+=========================================
+Cisco SOHO Network - Switch Configuration
+=========================================
 
+Device: Cisco Catalyst 2960 Switch
+
+Hostname: Switch
+
+-----------------------------------------
+VLAN Configuration
+-----------------------------------------
+
+VLAN 10 - Admin / IT
+VLAN 20 - Finance / HR
+VLAN 30 - Customer Service / Reception
+
+-----------------------------------------
+Interface Configuration
+-----------------------------------------
+
+FastEthernet0/1
+Description: Trunk link to Router
+Switchport Mode: Trunk
+
+FastEthernet0/2 - FastEthernet0/4
+Assigned VLAN: 10
+Mode: Access
+
+FastEthernet0/5 - FastEthernet0/7
+Assigned VLAN: 20
+Mode: Access
+
+FastEthernet0/8 - FastEthernet0/10
+Assigned VLAN: 30
+Mode: Access
+
+-----------------------------------------
+Spanning Tree
+-----------------------------------------
+
+Mode: PVST
+
+-----------------------------------------
+Management Interface
+-----------------------------------------
+
+Interface VLAN1
+Shutdown
+No IP Address Configured
+
+-----------------------------------------
+Verification Commands
+-----------------------------------------
+
+show vlan brief
+
+show interfaces trunk
+
+show running-config
+
+show mac address-table
+
+show spanning-tree
+
+-----------------------------------------
+Outcome
+-----------------------------------------
+
+✓ VLANs successfully created
+✓ Access ports assigned correctly
+✓ Trunk link configured
+✓ Switch ready for Router-on-a-Stick implementation
