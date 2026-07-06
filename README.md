@@ -18,7 +18,7 @@ The project was completed from initial network planning through implementation, 
 
 # Project Scenario
 
-XYZ Company is opening a new branch office in Bonalbo, Australia.
+ABC Company is opening a new branch office in Bonalbo, Australia.
 
 The new office must operate independently from the headquarters while supporting three business departments.
 
