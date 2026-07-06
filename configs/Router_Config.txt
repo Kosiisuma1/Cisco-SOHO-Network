@@ -1,1 +1,100 @@
+=========================================
+Cisco SOHO Network - Router Configuration
+=========================================
 
+Device: Cisco 2911 Router
+
+Hostname: Router
+
+-----------------------------------------
+Router-on-a-Stick Configuration
+-----------------------------------------
+
+GigabitEthernet0/0
+
+Subinterface G0/0.10
+VLAN: 10
+Encapsulation: Dot1Q 10
+Gateway: 192.168.1.1/26
+
+Subinterface G0/0.20
+VLAN: 20
+Encapsulation: Dot1Q 20
+Gateway: 192.168.1.65/26
+
+Subinterface G0/0.30
+VLAN: 30
+Encapsulation: Dot1Q 30
+Gateway: 192.168.1.129/26
+
+-----------------------------------------
+DHCP Configuration
+-----------------------------------------
+
+DHCP Pool: ADMIN
+
+Network:
+192.168.1.0/26
+
+Default Gateway:
+192.168.1.1
+
+DNS Server:
+8.8.8.8
+
+-----------------------------------------
+
+DHCP Pool: FINANCE
+
+Network:
+192.168.1.64/26
+
+Default Gateway:
+192.168.1.65
+
+DNS Server:
+8.8.8.8
+
+-----------------------------------------
+
+DHCP Pool: CUSTOMER_SERVICE
+
+Network:
+192.168.1.128/26
+
+Default Gateway:
+192.168.1.129
+
+DNS Server:
+8.8.8.8
+
+-----------------------------------------
+Verification Commands
+-----------------------------------------
+
+show ip interface brief
+
+show ip route
+
+show running-config
+
+show ip dhcp binding
+
+show ip dhcp pool
+
+show ip interface g0/0.10
+
+show ip interface g0/0.20
+
+show ip interface g0/0.30
+
+-----------------------------------------
+Outcome
+-----------------------------------------
+
+✓ Router-on-a-Stick configured
+✓ Inter-VLAN Routing operational
+✓ DHCP configured for all VLANs
+✓ Default gateways configured
+✓ Devices receive IP addresses automatically
+✓ All VLANs successfully communicate
