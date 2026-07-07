@@ -144,16 +144,6 @@ Configured:
 - Access Ports
 - 802.1Q Trunk Port
 
-Configuration file:
-
-```
-configs/Switch_Config.txt
-```
-
----
-
-## Router
-
 Configured:
 
 - Router-on-a-Stick
@@ -161,14 +151,6 @@ Configured:
 - DHCP Pools
 - Default Gateways
 - Inter-VLAN Routing
-
-Configuration file:
-
-```
-configs/Router_Config.txt
-```
-
----
 
 # DHCP Configuration
 
